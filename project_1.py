@@ -1,8 +1,8 @@
 from matplotlib.image import imread
 import matplotlib.pyplot as plt
 
-#input_image = imread("dogo.jpg")
-input_image = imread("dogo_gray.jpg")
+input_image = imread("dogo.jpg")
+#input_image = imread("dogo_gray.jpg")
 
 r_const, g_const, b_const = 0.2126, 0.7152, 0.0722
 
@@ -24,7 +24,7 @@ def gray2rgb(input_image):
 
     plt.imsave("dogo_color.jpg", rgb_image)
 
-#rgb2gray(input_image)
-gray2rgb(input_image)
+rgb2gray(input_image)
+#gray2rgb(input_image)
 
 plt.show()
